@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Logic.Customer">
+    <Position X="4" Y="9.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEFAEAEBAmAIIAEgAEAQAAwAAEACJECAEBAAEAkAAg=</HashCode>
+      <FileName>Logic\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Logic.Food">
+    <Position X="15" Y="9.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAABQTABIAFkAAAAAEgAAEACIAQAAAAgAAgCAA=</HashCode>
+      <FileName>Logic\Food.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Logic.Category">
+    <Position X="12.75" Y="9.75" Width="1.5" />
+    <Members>
+      <Property Name="dataTable" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAAABADAAAAAgAAAAAAgACAACIAAAAAAQAAAAAA=</HashCode>
+      <FileName>Logic\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.Order">
+    <Position X="7.5" Y="9.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>CEEAFqQEBCDACIAFgkAAAAAgCAFAyIIIEgAgAAAAAYA=</HashCode>
+      <FileName>Logic\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Foods" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Logic.Employee">
+    <Position X="19.75" Y="9.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAEAABACAAIAEkQEAAAIgAAAACIACAAIBAAggAAg=</HashCode>
+      <FileName>Logic\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Role" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Logic.BaseModel&lt;T&gt;">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <Members>
+      <Property Name="Database" Hidden="true" />
+      <Property Name="dataTable" Hidden="true" />
+      <Property Name="State" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAKAIAABECAAYAIkBBAAAAggAkCCKUCCAIABgAAABg=</HashCode>
+      <FileName>Logic\BaseModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Restaurant_Management_System.Common">
+    <Position X="16" Y="0.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>ABgqAACQKMACAUEBQAgAAAACgAQgAoQIASgAAQQgAAA=</HashCode>
+      <FileName>Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Logic.IBaseModel">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAKAIAABACAAQAAAAAAAAAAAAECCCACAAIABAAAAAA=</HashCode>
+      <FileName>Logic\IBaseModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="Logic.IBaseModel&lt;T&gt;">
+    <Position X="3.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAEAAAAAAgAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\IBaseModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Logic.Role">
+    <Position X="25" Y="12" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAIAAAAAAEAIAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Role.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Logic.ModelState">
+    <Position X="0.75" Y="1.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEIEACgAACAAYAABAAAACAAAAA=</HashCode>
+      <FileName>Logic\BaseModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
